@@ -1,0 +1,1 @@
+#this repo includes a collection file and an environment file which i have exported from postman. this is part of a course on how to build test ci/cd pipelines for api automation testing in the azure devops

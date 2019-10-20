@@ -1,0 +1,14 @@
+{
+	"id": "72f2dc1e-13e1-4821-8369-e2d9e80d1386",
+	"name": "EnvironmentVariables",
+	"values": [
+		{
+			"key": "BaseURL",
+			"value": "https://chroniclingamerica.loc.gov",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-10-20T03:42:42.162Z",
+	"_postman_exported_using": "Postman/7.9.0"
+}

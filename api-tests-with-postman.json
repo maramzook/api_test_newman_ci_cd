@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "3bdb9bc8-a089-4da6-8336-0dbac6b86b35",
+		"name": "api-tests-with-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{BaseURL}}/search/pages/results/?andtext=thomas&format=json",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "46f87bab-8011-45ec-a3d3-1fe6dd17e199",
+						"exec": [
+							"pm.test(\"Test the Seach Pages: status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/search/pages/results/?andtext=thomas&format=json",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"search",
+						"pages",
+						"results",
+						""
+					],
+					"query": [
+						{
+							"key": "andtext",
+							"value": "thomas"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{BaseURL}}/search/titles/results/?terms=texas&format=json&page=1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b630e56-5688-4644-a217-444b39a7823f",
+						"exec": [
+							"pm.test(\"Test the Seach Title: status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/search/titles/results/?terms=texas&format=json&page=1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"search",
+						"titles",
+						"results",
+						""
+					],
+					"query": [
+						{
+							"key": "terms",
+							"value": "texas"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
